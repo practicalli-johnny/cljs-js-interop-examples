@@ -16,3 +16,9 @@
  root-component
  app-state
  {:target (js/document.getElementById "app")})
+
+
+;; ClojureScript defines special js namespace to allow accessing JavaScript types/functions/methods/objects defined in global scope (i.e. window object for browser).
+
+;; (def text js/globalName)
+;; JS output: namespace.text = globalName;
